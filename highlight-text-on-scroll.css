@@ -1,0 +1,45 @@
+body:not(.sqs-edit-mode-active) #siteWrapper section:has(.karaoke-text) {
+	--sectionheight: 200;
+	padding-top: 0!important;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	min-height: 100vh;
+	min-height: calc(var(--sectionheight) * 1vh) !important;
+	align-items: flex-start;
+}
+
+body:not(.sqs-edit-mode-active) #siteWrapper section:has(.karaoke-text) .content-wrapper,
+body:not(.sqs-edit-mode-active) #siteWrapper section:has(.karaoke-text) .section-border,
+body:not(.sqs-edit-mode-active) #siteWrapper section:has(.karaoke-text) .section-background {
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+	width: 100%;
+	min-height: 100vh;
+	position: sticky;
+	top: 0;
+	padding: 0!important;
+}
+
+body:not(.sqs-edit-mode-active) #siteWrapper section:has(.karaoke-text) .section-background img {
+	position: absolute;
+	inset: 0;
+}
+
+body:not(.sqs-edit-mode-active) #siteWrapper section:has(.karaoke-text) [data-fluid-engine] {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+body:not(.sqs-edit-mode-active) #siteWrapper section:has(.karaoke-text) .karaoke-text {
+	--karaoke-progress: 0;
+}
+
+body:not(.sqs-edit-mode-active) #siteWrapper section:has(.karaoke-text) .karaoke-text > * {
+	display: inline;
+	color: transparent;
+	background: linear-gradient(90deg, var(--end-color) var(--karaoke-progress), var(--start-color) var(--karaoke-progress));
+	-webkit-background-clip: text;
+	background-clip: text;
+}
