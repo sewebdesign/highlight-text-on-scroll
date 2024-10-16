@@ -32,14 +32,18 @@ body:not(.sqs-edit-mode-active) #siteWrapper section:has(.karaoke-text) [data-fl
 	justify-content: center;
 }
 
-body:not(.sqs-edit-mode-active) #siteWrapper section:has(.karaoke-text) .karaoke-text {
+body:not(.sqs-edit-mode-active) #siteWrapper .karaoke-text {
 	--karaoke-progress: 0;
 }
 
-body:not(.sqs-edit-mode-active) #siteWrapper section:has(.karaoke-text) .karaoke-text > * {
+body:not(.sqs-edit-mode-active) #siteWrapper .karaoke-text > * {
 	display: inline;
 	color: transparent;
 	background: linear-gradient(90deg, var(--end-color) var(--karaoke-progress), var(--start-color) var(--karaoke-progress));
 	-webkit-background-clip: text;
 	background-clip: text;
+}
+
+body:not(.sqs-edit-mode-active) #siteWrapper .karaoke-text:not([data-fade="false"]) > * {
+	opacity: 0;
 }
