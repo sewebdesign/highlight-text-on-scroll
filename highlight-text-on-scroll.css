@@ -44,6 +44,6 @@ body:not(.sqs-edit-mode-active) #siteWrapper .karaoke-text > * {
 	background-clip: text;
 }
 
-body:not(.sqs-edit-mode-active) #siteWrapper .karaoke-text:not([data-fade="false"]) > * {
+body:not(.sqs-edit-mode-active) #siteWrapper .karaoke-text:not([data-fade="false"]) {
 	opacity: 0;
 }
