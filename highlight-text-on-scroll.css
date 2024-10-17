@@ -36,7 +36,7 @@ body:not(.sqs-edit-mode-active) #siteWrapper .karaoke-text {
 	--karaoke-progress: 0;
 }
 
-body:not(.sqs-edit-mode-active) #siteWrapper .karaoke-text > * {
+body:not(.sqs-edit-mode-active) #siteWrapper .karaoke-text :is(h1,h2,h3,h4,p) {
 	display: inline;
 	color: transparent;
 	background: linear-gradient(90deg, var(--end-color) var(--karaoke-progress), var(--start-color) var(--karaoke-progress));
