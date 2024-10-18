@@ -6,6 +6,7 @@
 
   karaokeTexts.forEach((karaokeText) => {
     const section = karaokeText.closest('section');
+    section.classList.add('karaoke-section');
     const contentWrapper = section.querySelector(".content-wrapper");
     let sectionInView = false;
 
