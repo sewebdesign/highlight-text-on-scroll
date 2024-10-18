@@ -1,4 +1,4 @@
-body:not(.sqs-edit-mode-active) #siteWrapper section:has(.karaoke-text) {
+body:not(.sqs-edit-mode-active) #siteWrapper :is(section:has(.karaoke-text), .karaoke-section) {
 	--sectionheight: 200;
 	padding-top: 0!important;
 	display: grid;
@@ -21,12 +21,12 @@ body:not(.sqs-edit-mode-active) #siteWrapper section:has(.karaoke-text) .section
 	padding: 0!important;
 }
 
-body:not(.sqs-edit-mode-active) #siteWrapper section:has(.karaoke-text) .section-background img {
+body:not(.sqs-edit-mode-active) #siteWrapper :is(section:has(.karaoke-text), .karaoke-section) .section-background img {
 	position: absolute;
 	inset: 0;
 }
 
-body:not(.sqs-edit-mode-active) #siteWrapper section:has(.karaoke-text) [data-fluid-engine] {
+body:not(.sqs-edit-mode-active) #siteWrapper :is(section:has(.karaoke-text), .karaoke-section) [data-fluid-engine] {
 	display: flex;
 	align-items: center;
 	justify-content: center;
