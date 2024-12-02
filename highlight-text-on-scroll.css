@@ -1,5 +1,4 @@
-body:not(.sqs-edit-mode-active) #siteWrapper :is(section:has(.karaoke-text), .karaoke-section) {
-	--sectionheight: 200;
+body:not(.sqs-edit-mode-active) #siteWrapper :is(.section-height--large:has(.karaoke-text), .karaoke-section-large) {
 	padding-top: 0!important;
 	display: grid;
 	grid-template-columns: 1fr;
@@ -9,24 +8,24 @@ body:not(.sqs-edit-mode-active) #siteWrapper :is(section:has(.karaoke-text), .ka
 	align-items: flex-start;
 }
 
-body:not(.sqs-edit-mode-active) #siteWrapper section:has(.karaoke-text) .content-wrapper,
-body:not(.sqs-edit-mode-active) #siteWrapper section:has(.karaoke-text) .section-border,
-body:not(.sqs-edit-mode-active) #siteWrapper section:has(.karaoke-text) .section-background {
+body:not(.sqs-edit-mode-active) #siteWrapper .section-height--large:has(.karaoke-text) .content-wrapper,
+body:not(.sqs-edit-mode-active) #siteWrapper .section-height--large:has(.karaoke-text) .section-border,
+body:not(.sqs-edit-mode-active) #siteWrapper .section-height--large:has(.karaoke-text) .section-background {
 	grid-column: 1 / 2;
 	grid-row: 1 / 2;
 	width: 100%;
 	min-height: 100vh;
 	position: sticky;
 	top: 0;
-	padding: 0!important;
+  padding: 0!important;
 }
 
-body:not(.sqs-edit-mode-active) #siteWrapper :is(section:has(.karaoke-text), .karaoke-section) .section-background img {
+body:not(.sqs-edit-mode-active) #siteWrapper :is(.section-height--large:has(.karaoke-text), .karaoke-sectio-large) .section-background img {
 	position: absolute;
 	inset: 0;
 }
 
-body:not(.sqs-edit-mode-active) #siteWrapper :is(section:has(.karaoke-text), .karaoke-section) [data-fluid-engine] {
+body:not(.sqs-edit-mode-active) #siteWrapper :is(.section-height--large:has(.karaoke-text), .karaoke-section-large) [data-fluid-engine] {
 	display: flex;
 	align-items: center;
 	justify-content: center;
