@@ -26,6 +26,9 @@ body:not(.sqs-edit-mode-active) #siteWrapper .section-height--large.background-w
     	padding-block: 4vw !important;
 	min-height: calc(100vh - 8vw);
 }
+body:not(.sqs-edit-mode-active) #siteWrapper .section-height--large.background-width--inset:has(.karaoke-text) .section-background {
+	min-height: calc(100vh - 8vw);
+}
 
 
 body:not(.sqs-edit-mode-active) #siteWrapper :is(.section-height--large:has(.karaoke-text), .karaoke-sectio-large) .section-background img {
