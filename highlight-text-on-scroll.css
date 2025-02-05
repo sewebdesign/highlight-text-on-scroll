@@ -21,6 +21,14 @@ body:not(.sqs-edit-mode-active) #siteWrapper .section-height--large:has(.karaoke
   padding: 0!important;
 }
 
+/* Inset Border */
+body:not(.sqs-edit-mode-active) #siteWrapper .section-height--large.background-width--inset:has(.karaoke-text) .section-border {
+	box-sizing: border-box;
+    	padding-block: 4vw !important;
+	min-height: calc(100vh - 8vw);
+}
+
+
 body:not(.sqs-edit-mode-active) #siteWrapper :is(.section-height--large:has(.karaoke-text), .karaoke-sectio-large) .section-background img {
 	position: absolute;
 	inset: 0;
