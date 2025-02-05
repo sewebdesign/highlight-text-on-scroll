@@ -1,5 +1,6 @@
 body:not(.sqs-edit-mode-active) #siteWrapper :is(.section-height--large:has(.karaoke-text), .karaoke-section-large) {
 	padding-top: 0!important;
+	padding-bottom: 0!important;
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr;
